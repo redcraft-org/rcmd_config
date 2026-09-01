@@ -11,10 +11,24 @@ jobs:
     steps:
       - uses: actions/checkout@v5
 
-      - name: Build rcmd
+      - name: Get rcmd
+        env:
+          GH_TOKEN: ${{ github.token }}
         run: |
-          git clone --depth 1 https://github.com/redcraft-org/RedCraftManagerDaemon.git /tmp/rcmd
-          cargo build --release --manifest-path /tmp/rcmd/Cargo.toml
+          mkdir -p "$HOME/bin"
+          if gh release download --repo redcraft-org/RedCraftManagerDaemon \
+               --pattern rcmd --dir "$HOME/bin" 2>/dev/null; then
+            chmod +x "$HOME/bin/rcmd"
+          else
+            # No release yet, or the asset moved. Building from source is
+            # slower but it always works.
+            echo "no release to download, building from source"
+            git clone --depth 1 \
+              https://github.com/redcraft-org/RedCraftManagerDaemon.git /tmp/rcmd
+            cargo build --release --manifest-path /tmp/rcmd/Cargo.toml
+            cp /tmp/rcmd/target/release/rcmd "$HOME/bin/rcmd"
+          fi
+          echo "$HOME/bin" >> "$GITHUB_PATH"
 
       - name: Check the configuration
-        run: /tmp/rcmd/target/release/rcmd validate .
+        run: rcmd validate .
