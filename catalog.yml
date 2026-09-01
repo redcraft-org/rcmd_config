@@ -34,6 +34,7 @@ artifacts:
     source: github
     url: 'https://github.com/BlueMap-Minecraft/BlueMap'
     file_filter: 'bluemap-*-cli.jar'
+    post_processors: [from_source]
 
   - name: 'BungeeTabListPlus'
     kind: plugin
@@ -91,12 +92,14 @@ artifacts:
     file_filter: 'Chunky-Fabric-*.jar'
     post_processors: [fabric_mod]
 
+  # Their CI sits behind a bot check that answers 403 to everything,
+  # and there are no GitHub releases to fall back on.
+  # Upload it with curl -T <jar> .../api/v1/artifacts/Citizens/versions
   - name: 'Citizens'
     kind: plugin
-    source: direct
-    url: 'https://ci.citizensnpcs.co/job/Citizens2/lastSuccessfulBuild/artifact/dist/target/*zip*/target.zip'
-    archive_filter: 'target/Citizens-*.jar'
-    post_processors: [unzip, plugin]
+    source: manual
+    url: 'https://ci.citizensnpcs.co/job/Citizens2/'
+    post_processors: [plugin]
 
   # Paid, and behind a bot check, so rcmd does not try. Upload it with
   # curl -T <jar> .../api/v1/artifacts/CMI/versions
@@ -118,7 +121,8 @@ artifacts:
   - name: 'CMILib'
     kind: plugin
     source: github
-    url: 'https://github.com/Zrips/CMI-Lib'
+    url: 'https://github.com/Zrips/CMILib'
+    file_filter: 'CMILib*.jar'
     post_processors: [plugin]
 
   - name: 'DecentHolograms'
@@ -130,10 +134,10 @@ artifacts:
 
   - name: 'Denizen'
     kind: plugin
-    source: direct
-    url: 'https://ci.citizensnpcs.co/job/Denizen_Developmental/lastSuccessfulBuild/artifact/target/*zip*/target.zip'
-    archive_filter: 'target/Denizen-*.jar'
-    post_processors: [unzip, plugin]
+    source: hangar
+    url: 'https://hangar.papermc.io/DenizenScript/Denizen'
+    file_filter: 'Denizen-*.jar'
+    post_processors: [plugin]
 
   - name: 'F3F4Perms'
     kind: plugin
@@ -169,9 +173,11 @@ artifacts:
     file_filter: 'FabricProxy-Lite-*.jar'
     post_processors: [fabric_mod]
 
+  # Paid, and behind a bot check, so rcmd does not try.
+  # Upload it with curl -T <jar> .../api/v1/artifacts/FarmLimiter/versions
   - name: 'FarmLimiter'
     kind: plugin
-    source: spiget
+    source: manual
     url: 'https://www.spigotmc.org/resources/farm-limiter.1419/'
     post_processors: [plugin]
 
@@ -336,10 +342,13 @@ artifacts:
     file_filter: 'PlanFabric-*.jar'
     post_processors: [fabric_mod]
 
+  # Free, but Spiget will not serve the download and the GitHub
+  # releases carry no jars.
+  # Upload it with curl -T <jar> .../api/v1/artifacts/PlotSquared/versions
   - name: 'PlotSquared'
     kind: plugin
-    source: github
-    url: 'https://github.com/IntellectualSites/PlotSquared'
+    source: manual
+    url: 'https://www.spigotmc.org/resources/plotsquared-v7.77506/'
     post_processors: [plugin]
 
   - name: 'PlugManX'
@@ -397,9 +406,11 @@ artifacts:
     file_filter: 'SchematioConnector-Paper-*.jar'
     post_processors: [plugin]
 
+  # Paid, and behind a bot check, so rcmd does not try.
+  # Upload it with curl -T <jar> .../api/v1/artifacts/SelectionVisualizer/versions
   - name: 'SelectionVisualizer'
     kind: plugin
-    source: spiget
+    source: manual
     url: 'https://www.spigotmc.org/resources/selection-visualizer.22631/'
     post_processors: [plugin]
 
@@ -450,6 +461,7 @@ artifacts:
     source: papermc
     url: 'https://fill.papermc.io/v3/projects/velocity/versions/4.1.0-SNAPSHOT'
     file_filter: 'velocity-4.1.0-SNAPSHOT-*.jar'
+    post_processors: [from_source]
 
   - name: 'VeryManyPlayers'
     kind: mod

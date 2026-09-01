@@ -1,2 +1,2 @@
 artifacts:
-  BlueMap: 'cli'
+  BlueMap: '*'
