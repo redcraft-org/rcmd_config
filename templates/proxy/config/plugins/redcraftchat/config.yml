@@ -1,0 +1,164 @@
+#  ___        _  ___           __ _
+# | _ \___ __| |/ __|_ _ __ _ / _| |_   ___ _ _ __ _
+# |   / -_) _` | (__| '_/ _` |  _|  _|_/ _ \ '_/ _` |
+# |_|_\___\__,_|\___|_| \__,_|_|  \__(_)___/_| \__, |
+#                                              |___/
+#
+# A BungeeCord plugin to handle chat on Minecraft and Discord
+
+# This is for your Discord bot
+# What to call the network when a message has to name it, such as the login
+# server setting.
+network-name: 'RedCraft.org'
+
+discord-enabled: true
+discord-token: 'DISCORD_TOKEN'
+discord-channel-minecraft: 'minecraft'
+discord-activity-enabled: true
+discord-activity-type: 'playing'
+discord-activity-value: 'RedCraft.org'
+
+# This is for the translation
+translation-enabled: true
+translation-discord-supported-languages: ['en', 'fr']
+translation-discord-category-format: '[%lang%] %topic%'
+chat-translation-provider: 'claude'
+upstream-translation-provider: 'claude' # This is to translate plugins from upstream servers
+
+# This is for supported locales
+supported-locales-provider: 'database'
+# Required only if player-provider is set to "api"
+supported-locales-api-url: 'https://redcraft.org/api/v1/language/list'
+default-locale: 'en-US'
+
+# This is to add missing players in tab completion
+# Extra commands that run another command, since Velocity has no alias of its
+# own. /hub runs /servers hub, and whatever the player types after the alias is
+# appended, so /hub museum still works. The command being aliased checks its
+# own permission, an alias grants nothing by itself.
+command-aliases:
+  hub: 'servers hub'
+  lobby: 'servers hub'
+  s: 'servers'
+  redstone: 'servers crea_redstone_plot'
+  build: 'servers crea_build_plot'
+  museum: 'servers museum'
+  vanilla: 'servers survival_vanilla'
+
+# Readable names for the backend servers, used in join and leave messages and
+# in the Discord bridge. Falls back to the motd a server answers a ping with,
+# and then to the name the proxy registers it under.
+# A small HTTP server reporting who is online and which client versions the
+# proxy accepts, at /players.json and /versions.json. The player list carries
+# the languages each player speaks.
+# :warning: There is no authentication, it is bound for the reverse proxy in
+# front of it to reach, not for the internet.
+json-api-enabled: true
+json-api-bind: '0.0.0.0'
+json-api-port: 8080
+
+server-display-names:
+  hub: '&6Hub'
+  crea_build_plot: '&dCrea Build Plot'
+  crea_redstone_plot: '&4Crea Redstone Plot'
+  museum: '&eMuseum'
+  crea_engineer_test: '&5Crea Engineer Test'
+  survival_vanilla: '&9Survival Vanilla'
+
+# Server names are proper nouns, and the ids above are what players type after
+# /server, so the translator is told to copy every one of them exactly rather
+# than left to guess which words are names. List here the ones that are ordinary
+# words after all and read better translated.
+translatable-server-names: ['Museum']
+
+# Other proper nouns the translator must copy rather than translate: worlds,
+# maps, anything a build is called. Be sparing, a word listed here is verbatim
+# in every sentence, so an ordinary one like Plot costs its translation
+# everywhere and not only on the sign it was added for.
+protected-names: ['KingdomHills', 'TopRed', 'Freebuild', 'Semi-RP', 'IRS', 'musehub', 'RedCraft']
+
+enable-tab-completion: false
+# Chat is cancelled and re-emitted by the proxy, which a signed message forbids,
+# so the signature is stripped from incoming chat and commands before Velocity
+# reads them. Turning this off breaks chat on 1.19 and newer clients.
+strip-chat-signatures: true
+strip-login-profile-key: false
+
+# These are the settings for Deepl live translation (if you use that provider)
+deepl-token: 'DEEPL_TOKEN'
+deepl-endpoint: 'https://api.deepl.com/v2/translate' # Free API
+deepl-formality: 'less' # can be "normal", "more" or "less". Default is "less" so messages seem more friendly
+deepl-preserve-formatting: false # whether the translation engine should respect the original formatting, even if it would usually correct some aspects
+
+# These are the settings for the ModernMT live translation (if you use that provider)
+# PS: If you use modernmt-free, these settings will be ignored
+# These are the settings for Claude live translation (if you use that provider)
+claude-token: 'CLAUDE_TOKEN'
+claude-model: 'claude-haiku-4-5-20251001'
+claude-endpoint: 'https://api.anthropic.com/v1/messages'
+claude-api-version: '2023-06-01'
+modernmt-token: ''
+
+# Shorten URLs
+url-shortening-enabled: false
+url-shortening-provider: 'redcraft'
+url-shortening-endpoint: 'https://redcraft.org/api/v1/url'
+url-shortening-api-token: ''
+
+# Avatar related settings
+player-avatar-endpoint: 'https://mc-heads.net/avatar/%player%/128'
+player-avatar-format: 'uuid' # Can be "uuid" or "name"
+
+# Storage related settings
+player-provider: 'database'
+# Required only if player-provider is set to "api"
+player-api-url: 'https://redcraft.org/api/v1/player'
+
+# Mail related settings
+mail-provider: 'database'
+
+# Scheduled announcements related settings
+scheduled-announcements-provider: 'database'
+scheduled-announcements-interval: 900 # interval between messages in seconds
+
+# Required (to store mails, supported locales and players if set to database)
+database-uri: 'jdbc:mysql://10.0.2.42:31006/minecraft?useSSL=false&autoReconnect=true'
+database-username: 'minecraft'
+database-password: 'MYSQL_PASSWORD'
+
+# Used for caching
+cache-provider: 'redis' # redis or memory
+# If you use redis
+redis-uri: 'redis://10.0.2.42:31379/0'
+redis-key-prefix: 'RCC'
+
+# The language selector. Native dialog for a 1.21.6+ client, the in-world
+# DisplayKit panel above that, and the clickable chat menu below both. Absent
+# here the plugin defaults it off, which silently returns every player to the
+# chat menu.
+displaykit-selector-enabled: true
+
+# Translate the interface strings ahead of time rather than on first use
+pretranslate-ui-enabled: true
+
+# Translate floating text
+translate-holograms: true
+
+# Action bars, both wire forms: the dedicated packet most plugins send and the
+# chat-with-overlay form CMI uses. Rewritten in place from a cache, so a HUD
+# repainting every tick costs one translation ever.
+translate-action-bars: true
+
+
+# Messages with clickable or hoverable parts: sentence and button labels are
+# translated together, events kept on the proxy and reattached afterwards.
+# Off while it soaks; flip to true to enable, any restore failure falls back
+# to the untouched original either way.
+upstream-translate-interactive: true
+
+
+# What language to assume for upstream text the detector cannot place, which
+# is most short action bars. Empty disables the assumption.
+upstream-fallback-source-language: 'en'# How long a system message waits to be grouped with the ones after it
+upstream-chat-grouping-delay: 110
+hologram-grouping-delay: 250

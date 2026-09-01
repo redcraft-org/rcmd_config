@@ -1,0 +1,787 @@
+Cuboids:
+  launchpad_crea_build_to_spawn:
+    object: cu@hub,-90,62,-15,-90,62,-15
+    flags: ''
+  launchpad_to_crea_build:
+    object: cu@hub,-24,61,-2,-24,61,-2
+    flags: ''
+  top_of_kotl:
+    object: cu@hub,-13,75,71,-13,75,71
+    flags: ''
+  launchpad_crea_redstone_to_spawn:
+    object: cu@hub,-81,61,30,-81,61,30
+    flags: ''
+  spawn_region:
+    object: cu@hub,-132,-1,-95,68,160,135
+    flags: ''
+  launchpad_survival_to_spawn:
+    object: cu@hub,-85,61,3,-85,61,3
+    flags: ''
+  jump_start:
+    object: cu@hub,-30,59,23,-30,59,23
+    flags: ''
+  jump_checkpoint_7:
+    object: cu@hub,11,89,-24,11,89,-24
+    flags: |
+      id:7
+  jump_checkpoint_6:
+    object: cu@hub,50,65,33,50,65,33
+    flags: |
+      id:6
+  jump_checkpoint_8:
+    object: cu@hub,53,101,13,53,101,13
+    flags: |
+      id:8
+  jump_checkpoint_3:
+    object: cu@hub,33,42,-31,33,42,-31
+    flags: |
+      id:3
+  jump_checkpoint_2:
+    object: cu@hub,29,37,-27,29,37,-27
+    flags: |
+      id:2
+  jump_checkpoint_5:
+    object: cu@hub,-20,23,55,-20,23,55
+    flags: |
+      id:5
+  jump_checkpoint_4:
+    object: cu@hub,52,47,18,52,47,18
+    flags: |
+      id:4
+  jump_checkpoint_1:
+    object: cu@hub,6,59,86,6,59,86
+    flags: |
+      id:1
+  king_of_the_ladder:
+    object: cu@hub,-16,67,68,-10,81,74
+    flags: ''
+  launchpad_to_survival:
+    object: cu@hub,-24,61,3,-24,61,3
+    flags: ''
+  jump_end:
+    object: cu@hub,-55,97,5,-55,97,5
+    flags: ''
+  portal_to_museum:
+    object: cu@hub,45,62,0,45,64,2
+    flags: ''
+  launchpad_to_crea_redstone:
+    object: cu@hub,-24,61,8,-24,61,8
+    flags: ''
+Polygons:
+  jump_zone_70:
+    object: polygon@hub,38.0,42.0,16.0,-38.0,20.0,-41.0,18.0,-44.0,14.0,-43.0
+    flags: ''
+  jump_zone_72:
+    object: polygon@hub,35.0,43.0,21.0,-59.0,17.0,-59.0,14.0,-47.0,18.0,-46.0
+    flags: ''
+  jump_zone_111:
+    object: polygon@hub,46.0,49.0,33.0,13.0,33.0,20.0,38.0,18.0,38.0,13.0
+    flags: ''
+  jump_zone_232:
+    object: polygon@hub,94.0,98.0,-26.0,-2.0,-26.0,2.0,-21.0,2.0,-21.0,-2.0
+    flags: ''
+  jump_zone_71:
+    object: polygon@hub,39.0,43.0,18.0,-43.0,14.0,-43.0,14.0,-47.0,18.0,-47.0
+    flags: ''
+  jump_zone_110:
+    object: polygon@hub,45.0,48.0,28.0,18.0,30.0,13.0,34.0,14.0,35.0,20.0
+    flags: ''
+  jump_zone_231:
+    object: polygon@hub,95.0,98.0,-17.0,1.0,-17.0,-3.0,-21.0,-2.0,-21.0,2.0
+    flags: ''
+  jump_zone_74:
+    object: polygon@hub,38.0,42.0,19.0,-62.0,22.0,-58.0,24.0,-60.0,24.0,-64.0
+    flags: ''
+  jump_zone_230:
+    object: polygon@hub,95.0,99.0,-17.0,-3.0,-17.0,1.0,-12.0,1.0,-12.0,-3.0
+    flags: ''
+  jump_zone_73:
+    object: polygon@hub,37.0,41.0,20.0,-56.0,17.0,-59.0,20.0,-62.0,23.0,-59.0
+    flags: ''
+  jump_zone_65:
+    object: polygon@hub,36.0,39.0,31.0,-22.0,27.0,-22.0,27.0,-28.0,31.0,-28.0
+    flags: ''
+  jump_zone_115:
+    object: polygon@hub,46.0,49.0,48.0,15.0,51.0,12.0,54.0,19.0,50.0,19.0
+    flags: ''
+  jump_zone_236:
+    object: polygon@hub,94.0,97.0,-38.0,4.0,-38.0,0.0,-42.0,0.0,-42.0,4.0
+    flags: ''
+  jump_zone_64:
+    object: polygon@hub,36.0,39.0,33.0,-18.0,29.0,-17.0,27.0,-22.0,31.0,-23.0
+    flags: ''
+  jump_zone_114:
+    object: polygon@hub,45.0,49.0,46.0,15.0,48.0,11.0,52.0,13.0,49.0,16.0
+    flags: ''
+  jump_zone_235:
+    object: polygon@hub,94.0,98.0,-38.0,4.0,-38.0,0.0,-33.0,0.0,-33.0,4.0
+    flags: ''
+  jump_zone_67:
+    object: polygon@hub,37.0,40.0,29.0,-32.0,25.0,-30.0,22.0,-34.0,25.0,-37.0
+    flags: ''
+  jump_zone_113:
+    object: polygon@hub,45.0,50.0,41.0,15.0,41.0,12.0,49.0,11.0,48.0,15.0
+    flags: ''
+  jump_zone_234:
+    object: polygon@hub,94.0,98.0,-30.0,3.0,-30.0,-1.0,-33.0,0.0,-33.0,4.0
+    flags: ''
+  jump_zone_66:
+    object: polygon@hub,36.0,40.0,27.0,-27.0,25.0,-31.0,29.0,-33.0,31.0,-27.0
+    flags: ''
+  jump_zone_112:
+    object: polygon@hub,47.0,49.0,36.0,20.0,37.0,13.0,42.0,11.0,42.0,18.0
+    flags: ''
+  jump_zone_233:
+    object: polygon@hub,94.0,97.0,-26.0,2.0,-26.0,-2.0,-30.0,-1.0,-30.0,3.0
+    flags: ''
+  jump_zone_69:
+    object: polygon@hub,37.0,41.0,23.0,-40.0,20.0,-36.0,16.0,-39.0,19.0,-42.0
+    flags: ''
+  jump_zone_119:
+    object: polygon@hub,37.0,48.0,40.0,25.0,40.0,20.0,31.0,21.0,31.0,25.0
+    flags: ''
+  jump_zone_68:
+    object: polygon@hub,37.0,40.0,26.0,-36.0,23.0,-33.0,19.0,-37.0,22.0,-40.0
+    flags: ''
+  jump_zone_118:
+    object: polygon@hub,42.0,48.0,39.0,25.0,48.0,25.0,48.0,21.0,39.0,20.0
+    flags: ''
+  jump_zone_239:
+    object: polygon@hub,95.0,99.0,-49.0,6.0,-49.0,2.0,-57.0,3.0,-57.0,7.0
+    flags: ''
+  jump_zone_117:
+    object: polygon@hub,45.0,49.0,47.0,25.0,46.0,21.0,51.0,20.0,52.0,24.0
+    flags: ''
+  jump_zone_238:
+    object: polygon@hub,95.0,98.0,-45.0,5.0,-45.0,1.0,-49.0,2.0,-49.0,6.0
+    flags: ''
+  jump_zone_116:
+    object: polygon@hub,46.0,49.0,50.0,18.0,54.0,18.0,52.0,24.0,49.0,21.0
+    flags: ''
+  jump_zone_237:
+    object: polygon@hub,94.0,98.0,-42.0,4.0,-42.0,0.0,-45.0,1.0,-45.0,5.0
+    flags: ''
+  jump_zone_61:
+    object: polygon@hub,34.0,41.0,36.0,-8.0,31.0,-9.0,31.0,-13.0,35.0,-13.0
+    flags: ''
+  jump_zone_100:
+    object: polygon@hub,43.0,46.0,37.0,-19.0,40.0,-22.0,45.0,-19.0,42.0,-16.0
+    flags: ''
+  jump_zone_221:
+    object: polygon@hub,100.0,104.0,28.0,17.0,32.0,13.0,29.0,10.0,26.0,14.0
+    flags: ''
+  jump_zone_60:
+    object: polygon@hub,38.0,41.0,30.0,-5.0,34.0,-4.0,35.0,-11.0,31.0,-11.0
+    flags: ''
+  jump_zone_220:
+    object: polygon@hub,100.0,103.0,34.0,15.0,33.0,19.0,28.0,17.0,32.0,13.0
+    flags: ''
+  jump_zone_63:
+    object: polygon@hub,35.0,39.0,30.0,-14.0,34.0,-15.0,33.0,-19.0,29.0,-18.0
+    flags: ''
+  jump_zone_62:
+    object: polygon@hub,34.0,38.0,31.0,-11.0,35.0,-12.0,34.0,-16.0,30.0,-15.0
+    flags: ''
+  jump_zone_109:
+    object: polygon@hub,44.0,46.0,25.0,15.0,30.0,18.0,32.0,15.0,29.0,12.0
+    flags: ''
+  jump_zone_54:
+    object: polygon@hub,34.0,38.0,32.0,14.0,28.0,14.0,29.0,9.0,33.0,9.0
+    flags: ''
+  jump_zone_104:
+    object: polygon@hub,39.0,45.0,47.0,-3.0,42.0,-2.0,38.0,-1.0,38.0,-6.0,42.0,-6.0,46.0,-7.0
+    flags: ''
+  jump_zone_225:
+    object: polygon@hub,103.0,107.0,18.0,11.0,18.0,7.0,15.0,5.0,15.0,9.0
+    flags: ''
+  jump_zone_53:
+    object: polygon@hub,33.0,37.0,29.0,18.0,26.0,15.0,28.0,12.0,32.0,13.0
+    flags: ''
+  jump_zone_103:
+    object: polygon@hub,40.0,44.0,44.0,-6.0,47.0,-3.0,49.0,-9.0,45.0,-9.0
+    flags: ''
+  jump_zone_224:
+    object: polygon@hub,103.0,106.0,22.0,12.0,22.0,8.0,18.0,7.0,18.0,11.0
+    flags: ''
+  jump_zone_56:
+    object: polygon@hub,36.0,42.0,32.0,4.0,28.0,4.0,28.0,8.0,33.0,7.0
+    flags: ''
+  jump_zone_102:
+    object: polygon@hub,41.0,45.0,45.0,-9.0,49.0,-8.0,48.0,-14.0,44.0,-14.0
+    flags: ''
+  jump_zone_223:
+    object: polygon@hub,102.0,106.0,24.0,13.0,25.0,9.0,22.0,8.0,22.0,12.0
+    flags: ''
+  jump_zone_55:
+    object: polygon@hub,36.0,39.0,29.0,10.0,33.0,10.0,32.0,7.0,29.0,7.0
+    flags: ''
+  jump_zone_101:
+    object: polygon@hub,42.0,46.0,44.0,-13.0,48.0,-14.0,45.0,-20.0,41.0,-17.0
+    flags: ''
+  jump_zone_222:
+    object: polygon@hub,101.0,105.0,26.0,14.0,29.0,10.0,25.0,9.0,24.0,13.0
+    flags: ''
+  jump_zone_58:
+    object: polygon@hub,37.0,41.0,31.0,0.0,28.0,0.0,29.0,-5.0,32.0,-5.0
+    flags: ''
+  jump_zone_108:
+    object: polygon@hub,43.0,45.0,25.0,7.0,21.0,8.0,23.0,14.0,27.0,15.0,28.0,10.0
+    flags: ''
+  jump_zone_229:
+    object: polygon@hub,96.0,99.0,-8.0,2.0,-8.0,-2.0,-12.0,-3.0,-12.0,1.0
+    flags: ''
+  jump_zone_57:
+    object: polygon@hub,37.0,40.0,33.0,4.0,29.0,4.0,28.0,0.0,32.0,0.0
+    flags: ''
+  jump_zone_107:
+    object: polygon@hub,42.0,45.0,21.0,4.0,24.0,4.0,25.0,9.0,22.0,9.0
+    flags: ''
+  jump_zone_228:
+    object: polygon@hub,96.0,99.0,-4.0,3.0,-4.0,-1.0,-8.0,-2.0,-8.0,2.0
+    flags: ''
+  jump_zone_106:
+    object: polygon@hub,41.0,45.0,26.0,-2.0,27.0,3.0,26.0,5.0,22.0,5.0,21.0,2.0
+    flags: ''
+  jump_zone_227:
+    object: polygon@hub,86.0,109.0,11.0,3.0,11.0,7.0,2.0,5.0,-4.0,3.0,-4.0,-1.0,2.0,0.0
+    flags: ''
+  jump_zone_59:
+    object: polygon@hub,38.0,42.0,30.0,-4.0,30.0,-6.0,32.0,-6.0,33.0,-3.0
+    flags: ''
+  jump_zone_105:
+    object: polygon@hub,40.0,44.0,39.0,-1.0,38.0,-6.0,31.0,-4.0,25.0,-2.0,26.0,3.0,30.0,0.0
+    flags: ''
+  jump_zone_226:
+    object: polygon@hub,104.0,107.0,15.0,9.0,15.0,5.0,11.0,3.0,11.0,7.0
+    flags: ''
+  jump_zone_90:
+    object: polygon@hub,44.0,49.0,23.0,-53.0,23.0,-57.0,28.0,-58.0,27.0,-54.0
+    flags: ''
+  jump_zone_92:
+    object: polygon@hub,47.0,51.0,31.0,-57.0,35.0,-53.0,32.0,-50.0,28.0,-53.0
+    flags: ''
+  jump_zone_91:
+    object: polygon@hub,46.0,50.0,27.0,-58.0,27.0,-54.0,29.0,-53.0,32.0,-57.0
+    flags: ''
+  jump_zone_94:
+    object: polygon@hub,46.0,53.0,33.0,-48.0,37.0,-48.0,37.0,-41.0,33.0,-43.0
+    flags: ''
+  jump_zone_210:
+    object: polygon@hub,99.0,104.0,48.0,2.0,51.0,2.0,51.0,-7.0,47.0,-7.0
+    flags: ''
+  jump_zone_93:
+    object: polygon@hub,48.0,51.0,35.0,-53.0,31.0,-51.0,33.0,-47.0,37.0,-48.0
+    flags: ''
+  jump_zone_96:
+    object: polygon@hub,41.0,47.0,35.0,-30.0,31.0,-30.0,31.0,-38.0,35.0,-38.0
+    flags: ''
+  jump_zone_95:
+    object: polygon@hub,44.0,49.0,31.0,-38.0,35.0,-37.0,37.0,-42.0,33.0,-43.0
+    flags: ''
+  jump_zone_2:
+    object: polygon@hub,59.0,63.0,-34.0,21.0,-32.0,25.0,-36.0,26.0,-38.0,23.0
+    flags: ''
+  jump_zone_3:
+    object: polygon@hub,60.0,64.0,-35.0,26.0,-38.0,22.0,-41.0,24.0,-37.0,28.0
+    flags: ''
+  jump_zone_4:
+    object: polygon@hub,60.0,64.0,-35.0,26.0,-38.0,22.0,-41.0,24.0,-37.0,28.0
+    flags: ''
+  jump_zone_5:
+    object: polygon@hub,61.0,65.0,-37.0,28.0,-41.0,24.0,-43.0,29.0,-40.0,31.0
+    flags: ''
+  jump_zone_6:
+    object: polygon@hub,62.0,66.0,-39.0,30.0,-43.0,29.0,-44.0,32.0,-40.0,32.0
+    flags: ''
+  jump_zone_7:
+    object: polygon@hub,63.0,67.0,-44.0,32.0,-40.0,32.0,-40.0,35.0,-44.0,35.0
+    flags: ''
+  jump_zone_8:
+    object: polygon@hub,64.0,68.0,-40.0,34.0,-44.0,35.0,-43.0,40.0,-39.0,38.0
+    flags: ''
+  jump_zone_9:
+    object: polygon@hub,65.0,69.0,-39.0,36.0,-37.0,39.0,-40.0,42.0,-43.0,40.0
+    flags: ''
+  jump_zone_219:
+    object: polygon@hub,100.0,104.0,34.0,15.0,33.0,19.0,38.0,21.0,38.0,17.0
+    flags: ''
+  jump_zone_1:
+    object: polygon@hub,58.0,62.0,-28.0,21.0,-28.0,25.0,-33.0,25.0,-33.0,21.0
+    flags: ''
+  jump_zone_87:
+    object: polygon@hub,42.0,45.0,4.0,-60.0,4.0,-56.0,1.0,-55.0,0.0,-58.0
+    flags: ''
+  jump_zone_214:
+    object: polygon@hub,100.0,103.0,51.0,12.0,55.0,12.0,54.0,18.0,50.0,16.0
+    flags: ''
+  jump_zone_86:
+    object: polygon@hub,41.0,45.0,7.0,-57.0,7.0,-61.0,3.0,-60.0,4.0,-56.0
+    flags: ''
+  jump_zone_213:
+    object: polygon@hub,99.0,103.0,55.0,8.0,51.0,8.0,51.0,15.0,55.0,15.0
+    flags: ''
+  jump_zone_89:
+    object: polygon@hub,34.0,50.0,12.0,-49.0,12.0,-54.0,23.0,-57.0,24.0,-53.0
+    flags: ''
+  jump_zone_212:
+    object: polygon@hub,98.0,102.0,53.0,5.0,49.0,5.0,51.0,8.0,55.0,8.0
+    flags: ''
+  jump_zone_88:
+    object: polygon@hub,43.0,48.0,2.0,-55.0,0.0,-55.0,0.0,-53.0,13.0,-53.0,13.0,-50.0,-2.0,-50.0,-3.0,-51.0,-3.0,-57.0,-2.0,-58.0,1.0,-58.0
+    flags: ''
+  jump_zone_211:
+    object: polygon@hub,98.0,101.0,52.0,0.0,47.0,2.0,49.0,7.0,53.0,5.0
+    flags: ''
+  jump_zone_218:
+    object: polygon@hub,101.0,105.0,38.0,17.0,38.0,21.0,43.0,22.0,43.0,18.0
+    flags: ''
+  jump_zone_217:
+    object: polygon@hub,102.0,105.0,47.0,22.0,47.0,18.0,43.0,18.0,43.0,22.0
+    flags: ''
+  jump_zone_216:
+    object: polygon@hub,101.0,105.0,51.0,21.0,49.0,17.0,47.0,18.0,47.0,22.0
+    flags: ''
+  jump_zone_215:
+    object: polygon@hub,100.0,104.0,54.0,18.0,50.0,16.0,49.0,17.0,51.0,21.0
+    flags: ''
+  jump_zone_81:
+    object: polygon@hub,45.0,48.0,30.0,-47.0,29.0,-51.0,25.0,-51.0,25.0,-47.0
+    flags: ''
+  jump_zone_80:
+    object: polygon@hub,44.0,48.0,30.0,-53.0,34.0,-50.0,29.0,-47.0,28.0,-51.0
+    flags: ''
+  jump_zone_83:
+    object: polygon@hub,35.0,48.0,16.0,-58.0,12.0,-54.0,25.0,-47.0,26.0,-51.0
+    flags: ''
+  jump_zone_82:
+    object: polygon@hub,40.0,48.0,23.0,-57.0,19.0,-56.0,20.0,-50.0,25.0,-48.0,27.0,-51.0
+    flags: ''
+  jump_zone_85:
+    object: polygon@hub,41.0,44.0,11.0,-56.0,12.0,-60.0,6.0,-61.0,7.0,-57.0
+    flags: ''
+  jump_zone_84:
+    object: polygon@hub,40.0,44.0,15.0,-58.0,13.0,-54.0,10.0,-56.0,11.0,-60.0
+    flags: ''
+  jump_zone_209:
+    object: polygon@hub,98.0,102.0,53.0,-4.0,53.0,-8.0,47.0,-7.0,47.0,-3.0
+    flags: ''
+  jump_zone_208:
+    object: polygon@hub,97.0,101.0,48.0,-9.0,52.0,-11.0,54.0,-5.0,50.0,-4.0
+    flags: ''
+  jump_zone_76:
+    object: polygon@hub,40.0,44.0,27.0,-64.0,26.0,-60.0,29.0,-59.0,32.0,-62.0
+    flags: ''
+  jump_zone_203:
+    object: polygon@hub,92.0,96.0,46.0,-18.0,42.0,-18.0,44.0,-12.0,47.0,-15.0
+    flags: ''
+  jump_zone_75:
+    object: polygon@hub,39.0,43.0,23.0,-60.0,23.0,-64.0,27.0,-64.0,27.0,-60.0
+    flags: ''
+  jump_zone_202:
+    object: polygon@hub,91.0,95.0,44.0,-23.0,40.0,-21.0,42.0,-18.0,46.0,-18.0
+    flags: ''
+  jump_zone_78:
+    object: polygon@hub,42.0,46.0,34.0,-60.0,30.0,-59.0,31.0,-56.0,35.0,-56.0
+    flags: ''
+  jump_zone_201:
+    object: polygon@hub,87.0,101.0,26.0,-37.0,29.0,-40.0,39.0,-31.0,44.0,-21.0,40.0,-19.0,35.0,-27.0
+    flags: ''
+  jump_zone_77:
+    object: polygon@hub,41.0,45.0,31.0,-63.0,28.0,-60.0,31.0,-57.0,34.0,-60.0
+    flags: ''
+  jump_zone_200:
+    object: polygon@hub,95.0,99.0,26.0,-42.0,23.0,-39.0,27.0,-36.0,30.0,-37.0
+    flags: ''
+  jump_zone_207:
+    object: polygon@hub,96.0,100.0,46.0,-6.0,44.0,-9.0,50.0,-11.0,52.0,-7.0
+    flags: ''
+  jump_zone_79:
+    object: polygon@hub,43.0,47.0,31.0,-56.0,35.0,-56.0,33.0,-50.0,30.0,-53.0
+    flags: ''
+  jump_zone_206:
+    object: polygon@hub,95.0,99.0,46.0,-13.0,43.0,-11.0,46.0,-6.0,49.0,-8.0
+    flags: ''
+  jump_zone_205:
+    object: polygon@hub,94.0,98.0,49.0,-14.0,50.0,-10.0,44.0,-9.0,43.0,-12.0
+    flags: ''
+  jump_zone_204:
+    object: polygon@hub,93.0,97.0,47.0,-15.0,44.0,-12.0,48.0,-10.0,50.0,-13.0
+    flags: ''
+  jump_zone_98:
+    object: polygon@hub,41.0,47.0,35.0,-21.0,38.0,-24.0,36.0,-27.0,32.0,-26.0
+    flags: ''
+  jump_zone_97:
+    object: polygon@hub,41.0,44.0,35.0,-31.0,31.0,-31.0,32.0,-25.0,36.0,-26.0
+    flags: ''
+  jump_zone_99:
+    object: polygon@hub,42.0,48.0,38.0,-18.0,41.0,-21.0,38.0,-24.0,34.0,-22.0
+    flags: ''
+  jump_zone_195:
+    object: polygon@hub,93.0,97.0,5.0,-41.0,8.0,-40.0,11.0,-42.0,7.0,-46.0
+    flags: ''
+  jump_zone_194:
+    object: polygon@hub,92.0,96.0,5.0,-38.0,9.0,-38.0,9.0,-41.0,5.0,-41.0
+    flags: ''
+  jump_zone_193:
+    object: polygon@hub,91.0,95.0,6.0,-35.0,10.0,-35.0,9.0,-38.0,5.0,-38.0
+    flags: ''
+  jump_zone_192:
+    object: polygon@hub,90.0,94.0,7.0,-31.0,11.0,-31.0,10.0,-35.0,6.0,-35.0
+    flags: ''
+  jump_zone_199:
+    object: polygon@hub,92.0,98.0,20.0,-42.0,23.0,-45.0,29.0,-41.0,25.0,-38.0
+    flags: ''
+  jump_zone_198:
+    object: polygon@hub,92.0,96.0,21.0,-41.0,24.0,-44.0,20.0,-48.0,17.0,-44.0
+    flags: ''
+  jump_zone_197:
+    object: polygon@hub,93.0,99.0,13.0,-49.0,13.0,-45.0,18.0,-44.0,20.0,-48.0
+    flags: ''
+  jump_zone_196:
+    object: polygon@hub,94.0,99.0,7.0,-46.0,11.0,-42.0,13.0,-45.0,13.0,-49.0
+    flags: ''
+  jump_zone_191:
+    object: polygon@hub,89.0,93.0,8.0,-28.0,12.0,-28.0,11.0,-31.0,7.0,-31.0
+    flags: ''
+  jump_zone_190:
+    object: polygon@hub,88.0,92.0,9.0,-22.0,13.0,-22.0,12.0,-28.0,8.0,-28.0
+    flags: ''
+  jump_zone_184:
+    object: polygon@hub,83.0,86.0,19.0,-9.0,18.0,-5.0,13.0,-7.0,15.0,-10.0
+    flags: ''
+  jump_zone_183:
+    object: polygon@hub,82.0,85.0,21.0,-6.0,23.0,-8.0,21.0,-10.0,18.0,-9.0,17.0,-5.0
+    flags: ''
+  jump_zone_182:
+    object: polygon@hub,81.0,84.0,23.0,-11.0,25.0,-12.0,25.0,-8.0,22.0,-6.0,20.0,-10.0
+    flags: ''
+  jump_zone_181:
+    object: polygon@hub,80.0,82.0,28.0,-11.0,28.0,-9.0,25.0,-8.0,25.0,-12.0
+    flags: ''
+  jump_zone_188:
+    object: polygon@hub,86.0,90.0,8.0,-17.0,12.0,-17.0,13.0,-21.0,9.0,-21.0
+    flags: ''
+  jump_zone_187:
+    object: polygon@hub,85.0,89.0,9.0,-14.0,13.0,-14.0,12.0,-18.0,8.0,-18.0
+    flags: ''
+  jump_zone_186:
+    object: polygon@hub,84.0,88.0,11.0,-10.0,15.0,-11.0,13.0,-15.0,9.0,-14.0
+    flags: ''
+  jump_zone_185:
+    object: polygon@hub,83.0,87.0,17.0,-9.0,14.0,-6.0,11.0,-11.0,15.0,-12.0
+    flags: ''
+  jump_zone_180:
+    object: polygon@hub,79.0,81.0,31.0,-12.0,31.0,-9.0,28.0,-9.0,28.0,-11.0
+    flags: ''
+  jump_zone_189:
+    object: polygon@hub,87.0,92.0,9.0,-20.0,13.0,-20.0,13.0,-25.0,9.0,-25.0
+    flags: ''
+  jump_zone_173:
+    object: polygon@hub,76.0,78.0,41.0,-18.0,44.0,-18.0,44.0,-15.0,41.0,-15.0
+    flags: ''
+  jump_zone_172:
+    object: polygon@hub,75.0,78.0,41.0,-21.0,44.0,-21.0,40.0,-16.0,44.0,-16.0
+    flags: ''
+  jump_zone_171:
+    object: polygon@hub,72.0,76.0,41.0,-24.0,41.0,-19.0,44.0,-19.0,44.0,-24.0
+    flags: ''
+  jump_zone_170:
+    object: polygon@hub,71.0,74.0,46.0,-21.0,46.0,-23.0,41.0,-24.0,41.0,-22.0,44.0,-21.0
+    flags: ''
+  jump_zone_177:
+    object: polygon@hub,77.0,80.0,37.0,-12.0,37.0,-9.0,32.0,-9.0,32.0,-13.0
+    flags: ''
+  jump_zone_176:
+    object: polygon@hub,77.0,80.0,35.0,-9.0,35.0,-12.0,39.0,-12.0,40.0,-10.0
+    flags: ''
+  jump_zone_175:
+    object: polygon@hub,78.0,80.0,43.0,-12.0,40.0,-10.0,37.0,-13.0,40.0,-16.0
+    flags: ''
+  jump_zone_174:
+    object: polygon@hub,77.0,79.0,41.0,-17.0,45.0,-15.0,42.0,-12.0,39.0,-15.0
+    flags: ''
+  jump_zone_179:
+    object: polygon@hub,79.0,81.0,31.0,-12.0,31.0,-9.0,29.0,-9.0,29.0,-12.0
+    flags: ''
+  jump_zone_178:
+    object: polygon@hub,78.0,81.0,34.0,-12.0,34.0,-9.0,30.0,-9.0,30.0,-13.0
+    flags: ''
+  jump_zone_162:
+    object: polygon@hub,65.0,67.0,48.0,9.0,46.0,9.0,46.0,7.0,50.0,6.0
+    flags: ''
+  jump_zone_161:
+    object: polygon@hub,66.0,68.0,42.0,12.0,44.0,8.0,49.0,8.0,48.0,12.0
+    flags: ''
+  jump_zone_160:
+    object: polygon@hub,65.0,67.0,46.0,12.0,45.0,14.0,41.0,14.0,42.0,12.0
+    flags: ''
+  jump_zone_166:
+    object: polygon@hub,67.0,69.0,50.0,-4.0,46.0,-3.0,47.0,-10.0,50.0,-10.0
+    flags: ''
+  jump_zone_165:
+    object: polygon@hub,65.0,67.0,47.0,1.0,51.0,1.0,50.0,-6.0,45.0,-6.0,47.0,-2.0
+    flags: ''
+  jump_zone_164:
+    object: polygon@hub,64.0,66.0,50.0,5.0,45.0,5.0,47.0,-1.0,51.0,2.0
+    flags: ''
+  jump_zone_163:
+    object: polygon@hub,65.0,67.0,44.0,7.0,49.0,7.0,51.0,3.0,45.0,3.0
+    flags: ''
+  jump_zone_169:
+    object: polygon@hub,70.0,72.0,44.0,-16.0,48.0,-17.0,46.0,-23.0,44.0,-23.0
+    flags: ''
+  jump_zone_168:
+    object: polygon@hub,69.0,71.0,47.0,-10.0,46.0,-13.0,44.0,-17.0,48.0,-17.0,50.0,-15.0,51.0,-14.0,51.0,-10.0
+    flags: ''
+  jump_zone_167:
+    object: polygon@hub,67.0,72.0,50.0,-10.0,50.0,-11.0,49.0,-11.0,49.0,-10.0
+    flags: ''
+  jump_zone_151:
+    object: polygon@hub,35.0,61.0,36.0,50.0,30.0,50.0,30.0,56.0,36.0,56.0
+    flags: ''
+  jump_zone_150:
+    object: polygon@hub,36.0,40.0,28.0,49.0,27.0,53.0,31.0,54.0,32.0,50.0
+    flags: ''
+  jump_zone_155:
+    object: polygon@hub,60.0,64.0,42.0,45.0,44.0,42.0,48.0,44.0,45.0,48.0
+    flags: ''
+  jump_zone_154:
+    object: polygon@hub,59.0,63.0,39.0,47.0,42.0,50.0,46.0,47.0,43.0,44.0
+    flags: ''
+  jump_zone_30:
+    object: polygon@hub,55.0,59.0,-4.0,88.0,-1.0,86.0,0.0,90.0,-4.0,92.0
+    flags: ''
+  jump_zone_153:
+    object: polygon@hub,58.0,62.0,36.0,49.0,39.0,52.0,43.0,49.0,40.0,46.0
+    flags: ''
+  jump_zone_152:
+    object: polygon@hub,57.0,61.0,34.0,54.0,34.0,50.0,38.0,48.0,39.0,52.0
+    flags: ''
+  jump_zone_29:
+    object: polygon@hub,54.0,58.0,-6.0,87.0,-8.0,91.0,-4.0,92.0,-3.0,88.0
+    flags: ''
+  jump_zone_28:
+    object: polygon@hub,53.0,57.0,-11.0,89.0,-10.0,85.0,-5.0,87.0,-7.0,91.0
+    flags: ''
+  jump_zone_21:
+    object: polygon@hub,69.0,72.0,-24.0,65.0,-26.0,70.0,-29.0,67.0,-28.0,63.0
+    flags: ''
+  jump_zone_159:
+    object: polygon@hub,65.0,70.0,48.0,34.0,46.0,29.0,40.0,24.0,41.0,16.0,41.0,13.0,46.0,13.0,45.0,17.0,46.0,23.0,50.0,25.0,52.0,34.0
+    flags: ''
+  jump_zone_20:
+    object: polygon@hub,68.0,72.0,-25.0,60.0,-21.0,64.0,-24.0,67.0,-28.0,64.0
+    flags: ''
+  jump_zone_158:
+    object: polygon@hub,63.0,67.0,50.0,38.0,46.0,36.0,48.0,32.0,52.0,32.0
+    flags: ''
+  jump_zone_23:
+    object: polygon@hub,64.0,72.0,-28.0,73.0,-32.0,71.0,-32.0,81.0,-28.0,79.0
+    flags: ''
+  jump_zone_157:
+    object: polygon@hub,62.0,66.0,47.0,41.0,44.0,39.0,46.0,35.0,51.0,38.0
+    flags: ''
+  jump_zone_22:
+    object: polygon@hub,67.0,72.0,-28.0,75.0,-32.0,74.0,-29.0,67.0,-25.0,68.0
+    flags: ''
+  jump_zone_156:
+    object: polygon@hub,61.0,65.0,48.0,44.0,44.0,44.0,44.0,38.0,48.0,38.0
+    flags: ''
+  jump_zone_25:
+    object: polygon@hub,42.0,63.0,-17.0,88.0,-17.0,83.0,-27.0,81.0,-28.0,85.0
+    flags: ''
+  jump_zone_24:
+    object: polygon@hub,60.0,67.0,-28.0,87.0,-25.0,82.0,-28.0,77.0,-32.0,78.0
+    flags: ''
+  jump_zone_27:
+    object: polygon@hub,52.0,56.0,-13.0,84.0,-14.0,88.0,-11.0,89.0,-9.0,85.0
+    flags: ''
+  jump_zone_26:
+    object: polygon@hub,42.0,55.0,-20.0,83.0,-20.0,88.0,-13.0,88.0,-13.0,84.0
+    flags: ''
+  jump_zone_140:
+    object: polygon@hub,28.0,32.0,-1.0,69.0,-2.0,65.0,2.0,63.0,3.0,67.0
+    flags: ''
+  jump_zone_144:
+    object: polygon@hub,30.0,34.0,13.0,61.0,10.0,58.0,14.0,55.0,16.0,59.0
+    flags: ''
+  jump_zone_143:
+    object: polygon@hub,30.0,33.0,8.0,60.0,10.0,64.0,14.0,60.0,11.0,57.0
+    flags: ''
+  jump_zone_142:
+    object: polygon@hub,29.0,33.0,6.0,66.0,5.0,62.0,9.0,60.0,11.0,64.0
+    flags: ''
+  jump_zone_141:
+    object: polygon@hub,29.0,32.0,1.0,67.0,1.0,63.0,7.0,62.0,7.0,66.0
+    flags: ''
+  jump_zone_18:
+    object: polygon@hub,69.0,72.0,-17.0,54.0,-21.0,53.0,-23.0,58.0,-19.0,60.0
+    flags: ''
+  jump_zone_17:
+    object: polygon@hub,70.0,73.0,-21.0,50.0,-17.0,50.0,-17.0,54.0,-21.0,54.0
+    flags: ''
+  jump_zone_19:
+    object: polygon@hub,68.0,71.0,-19.0,59.0,-23.0,57.0,-25.0,61.0,-22.0,64.0
+    flags: ''
+  jump_zone_10:
+    object: polygon@hub,66.0,70.0,-39.0,38.0,-40.0,42.0,-35.0,43.0,-35.0,39.0
+    flags: ''
+  jump_zone_148:
+    object: polygon@hub,34.0,38.0,21.0,56.0,21.0,52.0,27.0,52.0,27.0,56.0
+    flags: ''
+  jump_zone_147:
+    object: polygon@hub,33.0,37.0,19.0,57.0,23.0,56.0,23.0,52.0,19.0,53.0
+    flags: ''
+  jump_zone_12:
+    object: polygon@hub,68.0,72.0,-33.0,40.0,-33.0,44.0,-30.0,43.0,-30.0,39.0
+    flags: ''
+  jump_zone_146:
+    object: polygon@hub,32.0,36.0,15.0,56.0,15.0,52.0,20.0,53.0,20.0,57.0
+    flags: ''
+  jump_zone_11:
+    object: polygon@hub,67.0,71.0,-36.0,39.0,-36.0,43.0,-33.0,44.0,-33.0,40.0
+    flags: ''
+  jump_zone_145:
+    object: polygon@hub,31.0,35.0,13.0,56.0,14.0,53.0,18.0,53.0,16.0,59.0
+    flags: ''
+  jump_zone_14:
+    object: polygon@hub,70.0,74.0,-26.0,39.0,-27.0,43.0,-23.0,44.0,-22.0,40.0
+    flags: ''
+  jump_zone_13:
+    object: polygon@hub,69.0,73.0,-30.0,43.0,-30.0,39.0,-26.0,39.0,-26.0,43.0
+    flags: ''
+  jump_zone_16:
+    object: polygon@hub,71.0,74.0,-18.0,44.0,-22.0,45.0,-21.0,50.0,-17.0,50.0
+    flags: ''
+  jump_zone_15:
+    object: polygon@hub,71.0,74.0,-22.0,40.0,-25.0,44.0,-22.0,46.0,-18.0,44.0
+    flags: ''
+  jump_zone_149:
+    object: polygon@hub,35.0,39.0,24.0,53.0,27.0,56.0,30.0,52.0,27.0,49.0
+    flags: ''
+  jump_zone_50:
+    object: polygon@hub,30.0,34.0,20.0,25.0,17.0,21.0,21.0,18.0,24.0,22.0
+    flags: ''
+  jump_zone_133:
+    object: polygon@hub,22.0,25.0,-21.0,61.0,-17.0,60.0,-18.0,54.0,-22.0,54.0
+    flags: ''
+  jump_zone_132:
+    object: polygon@hub,22.0,25.0,-22.0,49.0,-18.0,49.0,-18.0,56.0,-22.0,56.0
+    flags: ''
+  jump_zone_52:
+    object: polygon@hub,32.0,36.0,27.0,20.0,23.0,17.0,27.0,14.0,30.0,17.0
+    flags: ''
+  jump_zone_131:
+    object: polygon@hub,21.0,25.0,-18.0,45.0,-18.0,51.0,-22.0,51.0,-22.0,45.0
+    flags: ''
+  jump_zone_51:
+    object: polygon@hub,31.0,35.0,20.0,18.0,23.0,22.0,27.0,19.0,24.0,16.0
+    flags: ''
+  jump_zone_130:
+    object: polygon@hub,20.0,24.0,-17.0,43.0,-18.0,47.0,-22.0,47.0,-21.0,42.0
+    flags: ''
+  jump_zone_43:
+    object: polygon@hub,60.0,63.0,19.0,41.0,19.0,46.0,14.0,46.0,16.0,41.0
+    flags: ''
+  jump_zone_137:
+    object: polygon@hub,25.0,29.0,-12.0,65.0,-7.0,66.0,-7.0,70.0,-12.0,69.0
+    flags: ''
+  jump_zone_42:
+    object: polygon@hub,60.0,63.0,20.0,51.0,17.0,52.0,14.0,48.0,14.0,45.0,17.0,46.0
+    flags: ''
+  jump_zone_136:
+    object: polygon@hub,24.0,28.0,-13.0,63.0,-10.0,65.0,-10.0,69.0,-16.0,66.0
+    flags: ''
+  jump_zone_45:
+    object: polygon@hub,57.0,63.0,19.0,34.0,16.0,34.0,15.0,32.0,15.0,29.0,18.0,29.0
+    flags: ''
+  jump_zone_135:
+    object: polygon@hub,23.0,27.0,-15.0,61.0,-19.0,64.0,-15.0,67.0,-12.0,64.0
+    flags: ''
+  jump_zone_44:
+    object: polygon@hub,57.0,64.0,16.0,34.0,19.0,34.0,19.0,42.0,16.0,42.0
+    flags: ''
+  jump_zone_134:
+    object: polygon@hub,22.0,26.0,-21.0,59.0,-17.0,58.0,-15.0,61.0,-18.0,64.0
+    flags: ''
+  jump_zone_47:
+    object: polygon@hub,28.0,31.0,20.0,34.0,20.0,27.0,13.0,28.0,13.0,34.0
+    flags: ''
+  jump_zone_46:
+    object: polygon@hub,28.0,57.0,18.0,29.0,15.0,29.0,15.0,32.0,18.0,32.0
+    flags: ''
+  jump_zone_49:
+    object: polygon@hub,29.0,33.0,15.0,24.0,19.0,28.0,21.0,24.0,17.0,21.0
+    flags: ''
+  jump_zone_139:
+    object: polygon@hub,27.0,31.0,-5.0,70.0,-5.0,66.0,-1.0,65.0,0.0,69.0
+    flags: ''
+  jump_zone_48:
+    object: polygon@hub,28.0,32.0,15.0,29.0,19.0,30.0,20.0,26.0,16.0,23.0
+    flags: ''
+  jump_zone_138:
+    object: polygon@hub,26.0,30.0,-8.0,66.0,-4.0,66.0,-3.0,70.0,-8.0,70.0
+    flags: ''
+  jump_zone_122:
+    object: polygon@hub,33.0,37.0,28.0,32.0,25.0,29.0,20.0,33.0,23.0,36.0
+    flags: ''
+  jump_zone_121:
+    object: polygon@hub,34.0,38.0,27.0,33.0,24.0,30.0,28.0,26.0,31.0,29.0
+    flags: ''
+  jump_zone_41:
+    object: polygon@hub,60.0,63.0,19.0,62.0,15.0,62.0,14.0,57.0,16.0,51.0,20.0,51.0,20.0,54.0,18.0,58.0
+    flags: ''
+  jump_zone_120:
+    object: polygon@hub,35.0,42.0,33.0,23.0,29.0,21.0,27.0,28.0,30.0,30.0
+    flags: ''
+  jump_zone_40:
+    object: polygon@hub,59.0,63.0,15.0,65.0,19.0,64.0,19.0,62.0,15.0,62.0
+    flags: ''
+  jump_zone_39:
+    object: polygon@hub,58.0,62.0,16.0,68.0,20.0,68.0,19.0,63.0,15.0,65.0
+    flags: ''
+  jump_zone_32:
+    object: polygon@hub,57.0,61.0,2.0,85.0,2.0,89.0,6.0,88.0,6.0,84.0
+    flags: ''
+  jump_zone_126:
+    object: polygon@hub,28.0,35.0,11.0,34.0,8.0,38.0,3.0,33.0,6.0,30.0
+    flags: ''
+  jump_zone_31:
+    object: polygon@hub,56.0,60.0,-2.0,86.0,-1.0,90.0,3.0,89.0,2.0,85.0
+    flags: ''
+  jump_zone_125:
+    object: polygon@hub,30.0,36.0,13.0,35.0,13.0,39.0,7.0,38.0,10.0,34.0
+    flags: ''
+  jump_zone_34:
+    object: polygon@hub,59.0,63.0,9.0,84.0,11.0,88.0,15.0,85.0,12.0,82.0
+    flags: ''
+  jump_zone_124:
+    object: polygon@hub,31.0,35.0,12.0,35.0,18.0,34.0,19.0,38.0,13.0,39.0
+    flags: ''
+  jump_zone_33:
+    object: polygon@hub,58.0,62.0,5.0,84.0,5.0,88.0,12.0,88.0,10.0,84.0
+    flags: ''
+  jump_zone_123:
+    object: polygon@hub,32.0,38.0,21.0,32.0,24.0,35.0,18.0,38.0,17.0,34.0
+    flags: ''
+  jump_zone_36:
+    object: polygon@hub,59.0,63.0,18.0,77.0,14.0,74.0,12.0,79.0,16.0,81.0
+    flags: ''
+  jump_zone_35:
+    object: polygon@hub,60.0,63.0,11.0,83.0,15.0,85.0,16.0,80.0,12.0,79.0
+    flags: ''
+  jump_zone_129:
+    object: polygon@hub,19.0,23.0,-15.0,41.0,-18.0,38.0,-21.0,42.0,-18.0,45.0
+    flags: ''
+  jump_zone_38:
+    object: polygon@hub,58.0,61.0,20.0,72.0,16.0,72.0,16.0,68.0,20.0,68.0
+    flags: ''
+  jump_zone_128:
+    object: polygon@hub,16.0,33.0,-1.0,30.0,-6.0,35.0,-11.0,39.0,-16.0,42.0,-19.0,39.0,-16.0,34.0,-11.0,30.0,-2.0,26.0
+    flags: ''
+  jump_zone_37:
+    object: polygon@hub,58.0,62.0,20.0,72.0,16.0,71.0,14.0,75.0,18.0,77.0
+    flags: ''
+  jump_zone_127:
+    object: polygon@hub,28.0,31.0,7.0,31.0,4.0,34.0,1.0,31.0,-3.0,30.0,-3.0,26.0,3.0,27.0
+    flags: ''

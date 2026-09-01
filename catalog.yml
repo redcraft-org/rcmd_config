@@ -1,0 +1,500 @@
+# Every jar rcmd knows how to fetch.
+#
+# kind decides where the file lands: an engine becomes server.jar, a
+# plugin goes in plugins/ and a mod goes in mods/.
+#
+# file_filter picks one file out of a release that ships several, and
+# archive_filter picks one out of a zip. In both, * is the only
+# wildcard and everything else is literal.
+
+artifacts:
+  - name: 'alternatecurrent'
+    kind: mod
+    source: modrinth
+    url: 'https://modrinth.com/mod/alternate-current/'
+    file_filter: 'alternate-current-mc26.2-*.jar'
+    post_processors: [fabric_mod]
+
+  - name: 'AntiRedstoneClock'
+    kind: plugin
+    source: github
+    url: 'https://github.com/OneLiteFeatherNET/AntiRedstoneClock-Remastered'
+    file_filter: 'AntiRedstoneClock-Remastered-*.jar'
+    post_processors: [plugin]
+
+  - name: 'AntiXray'
+    kind: mod
+    source: modrinth
+    url: 'https://modrinth.com/mod/anti-xray/'
+    file_filter: 'antixray-fabric-*26.*.jar'
+    post_processors: [fabric_mod]
+
+  - name: 'BlueMap'
+    kind: engine
+    source: github
+    url: 'https://github.com/BlueMap-Minecraft/BlueMap'
+    file_filter: 'bluemap-*-cli.jar'
+
+  - name: 'BungeeTabListPlus'
+    kind: plugin
+    source: jenkins
+    url: 'https://ci.codecrafter47.de/job/BungeeTabListPlus/'
+    file_filter: 'BungeeTabListPlus-Velocity-*.jar'
+    post_processors: [plugin]
+
+  - name: 'BungeeTabListPlusBridge'
+    kind: plugin
+    source: jenkins
+    url: 'https://ci.codecrafter47.de/job/BungeeTabListPlus/'
+    file_filter: 'BungeeTabListPlus_BukkitBridge-*.jar'
+    post_processors: [plugin]
+
+  - name: 'carpet'
+    kind: mod
+    source: modrinth
+    url: 'https://modrinth.com/mod/carpet/'
+    file_filter: 'fabric-carpet-26.2+*.jar'
+    post_processors: [fabric_mod]
+
+  - name: 'CarpetExtra'
+    kind: mod
+    source: modrinth
+    url: 'https://modrinth.com/mod/carpet-extra'
+    file_filter: 'carpet-extra-*-26.2.jar'
+    post_processors: [fabric_mod]
+
+  - name: 'CarpetTIS'
+    kind: mod
+    source: modrinth
+    url: 'https://modrinth.com/mod/carpet-tis-addition'
+    file_filter: 'carpet-tis-addition-*-mc26.2.jar'
+    post_processors: [fabric_mod]
+
+  - name: 'ChunkDebug'
+    kind: mod
+    source: modrinth
+    url: 'https://modrinth.com/mod/chunk-debug'
+    file_filter: 'ChunkDebug-*+26.2.jar'
+    post_processors: [fabric_mod]
+
+  - name: 'Chunky'
+    kind: plugin
+    source: modrinth
+    url: 'https://modrinth.com/plugin/chunky/'
+    file_filter: 'Chunky-Bukkit-*.jar'
+    post_processors: [plugin]
+
+  - name: 'ChunkyFabric'
+    kind: mod
+    source: modrinth
+    url: 'https://modrinth.com/plugin/chunky/'
+    file_filter: 'Chunky-Fabric-*.jar'
+    post_processors: [fabric_mod]
+
+  - name: 'Citizens'
+    kind: plugin
+    source: direct
+    url: 'https://ci.citizensnpcs.co/job/Citizens2/lastSuccessfulBuild/artifact/dist/target/*zip*/target.zip'
+    archive_filter: 'target/Citizens-*.jar'
+    post_processors: [unzip, plugin]
+
+  # Paid, and behind a bot check, so rcmd does not try. Upload it with
+  # curl -T <jar> .../api/v1/artifacts/CMI/versions
+  - name: 'CMI'
+    kind: plugin
+    source: manual
+    url: 'https://www.spigotmc.org/resources/cmi-270-commands-insane-kits-portals-essentials-economy-mysql-sqlite-much-more.3742/'
+    post_processors: [plugin]
+
+  # No template pins this, so nothing downloads it. Turn it back on if you
+  # start using it.
+  - name: 'CMIB'
+    kind: plugin
+    source: manual
+    url: 'https://zrips.net/cmib/'
+    post_processors: [plugin]
+    enabled: false
+
+  - name: 'CMILib'
+    kind: plugin
+    source: github
+    url: 'https://github.com/Zrips/CMI-Lib'
+    post_processors: [plugin]
+
+  - name: 'DecentHolograms'
+    kind: plugin
+    source: github
+    url: 'https://github.com/DecentSoftware-eu/DecentHolograms'
+    file_filter: 'DecentHolograms-*.jar'
+    post_processors: [plugin]
+
+  - name: 'Denizen'
+    kind: plugin
+    source: direct
+    url: 'https://ci.citizensnpcs.co/job/Denizen_Developmental/lastSuccessfulBuild/artifact/target/*zip*/target.zip'
+    archive_filter: 'target/Denizen-*.jar'
+    post_processors: [unzip, plugin]
+
+  - name: 'F3F4Perms'
+    kind: plugin
+    source: github
+    url: 'https://github.com/Lumine1909/F3F4Perms'
+    file_filter: 'F3F4Perms-*.jar'
+    post_processors: [plugin]
+
+  - name: 'Fabric'
+    kind: engine
+    source: fabricmc
+    url: 'https://meta.fabricmc.net/v2/versions/loader/26.2'
+    post_processors: [fabric_installer]
+
+  - name: 'fabricapi'
+    kind: mod
+    source: modrinth
+    url: 'https://modrinth.com/mod/fabric-api/'
+    file_filter: 'fabric-api-*+26.2.jar'
+    post_processors: [fabric_mod]
+
+  - name: 'fabrickotlin'
+    kind: mod
+    source: github
+    url: 'https://github.com/FabricMC/fabric-language-kotlin'
+    file_filter: 'fabric-language-kotlin-*.jar'
+    post_processors: [fabric_mod]
+
+  - name: 'FabricProxyLite'
+    kind: mod
+    source: modrinth
+    url: 'https://modrinth.com/mod/fabricproxy-lite/'
+    file_filter: 'FabricProxy-Lite-*.jar'
+    post_processors: [fabric_mod]
+
+  - name: 'FarmLimiter'
+    kind: plugin
+    source: spiget
+    url: 'https://www.spigotmc.org/resources/farm-limiter.1419/'
+    post_processors: [plugin]
+
+  - name: 'FastAsyncWorldEdit'
+    kind: plugin
+    source: modrinth
+    url: 'https://modrinth.com/plugin/fastasyncworldedit/'
+    file_filter: 'FastAsyncWorldEdit-Paper-*.jar'
+    post_processors: [plugin]
+
+  - name: 'Floodgate'
+    kind: plugin
+    source: direct
+    url: 'https://download.geysermc.org/v2/projects/floodgate/versions/latest/builds/latest/downloads/velocity'
+    post_processors: [plugin]
+
+  - name: 'Geyser'
+    kind: plugin
+    source: direct
+    url: 'https://download.geysermc.org/v2/projects/geyser/versions/latest/builds/latest/downloads/velocity'
+    post_processors: [plugin]
+
+  - name: 'goBrush'
+    kind: plugin
+    source: jenkins
+    url: 'https://ci.athion.net/job/goBrush-1.13+/'
+    file_filter: 'goBrush-*.jar'
+    post_processors: [plugin]
+
+  - name: 'goPaint'
+    kind: plugin
+    source: jenkins
+    url: 'https://ci.athion.net/job/goPaint-1.14+/'
+    file_filter: 'goPaint-*.jar'
+    post_processors: [plugin]
+
+  # Paid, and behind a bot check, so rcmd does not try. Upload it with
+  # curl -T <jar> .../api/v1/artifacts/HeadDatabase/versions
+  - name: 'HeadDatabase'
+    kind: plugin
+    source: manual
+    url: 'https://www.spigotmc.org/resources/head-database.14280/'
+    post_processors: [plugin]
+
+  - name: 'ImageFrame'
+    kind: plugin
+    source: modrinth
+    url: 'https://modrinth.com/plugin/imageframe/'
+    file_filter: 'ImageFrame-*.jar'
+    post_processors: [plugin]
+
+  - name: 'InvView'
+    kind: mod
+    source: github
+    url: 'https://github.com/PotatoPresident/InvView'
+    file_filter: 'InvView-*-26.2+.jar'
+    post_processors: [fabric_mod]
+
+  - name: 'krypton'
+    kind: mod
+    source: github
+    url: 'https://github.com/astei/krypton'
+    file_filter: 'krypton-*.jar'
+    post_processors: [fabric_mod]
+
+  - name: 'Ledger'
+    kind: mod
+    source: modrinth
+    url: 'https://modrinth.com/mod/ledger/'
+    file_filter: 'ledger-*.jar'
+    post_processors: [fabric_mod]
+
+  - name: 'LedgerDatabases'
+    kind: mod
+    source: modrinth
+    url: 'https://modrinth.com/mod/ledger-databases/'
+    file_filter: 'ledger-databases-*.jar'
+    post_processors: [fabric_mod]
+
+  # Paid, and behind a bot check, so rcmd does not try. Upload it with
+  # curl -T <jar> .../api/v1/artifacts/LiteBans/versions
+  - name: 'LiteBans'
+    kind: plugin
+    source: manual
+    url: 'https://www.spigotmc.org/resources/litebans.3715/'
+    post_processors: [plugin]
+
+  - name: 'lithium'
+    kind: mod
+    source: github
+    url: 'https://github.com/CaffeineMC/lithium-fabric'
+    file_filter: 'lithium-fabric-*+mc26.2.jar'
+    post_processors: [fabric_mod]
+
+  - name: 'LuckPerms'
+    kind: plugin
+    source: jenkins
+    url: 'https://ci.lucko.me/job/LuckPerms/'
+    file_filter: 'LuckPerms-Bukkit-*.jar'
+    post_processors: [plugin]
+
+  - name: 'LuckPermsFabric'
+    kind: mod
+    source: jenkins
+    url: 'https://ci.lucko.me/job/LuckPerms/'
+    file_filter: 'LuckPerms-Fabric-*.jar'
+    post_processors: [fabric_mod]
+
+  - name: 'LuckPermsVelocity'
+    kind: plugin
+    source: jenkins
+    url: 'https://ci.lucko.me/job/LuckPerms/'
+    file_filter: 'LuckPerms-Velocity-*.jar'
+    post_processors: [plugin]
+
+  - name: 'Maintenance'
+    kind: plugin
+    source: github
+    url: 'https://github.com/kennytv/Maintenance'
+    file_filter: 'Maintenance-Velocity-*.jar'
+    post_processors: [plugin]
+
+  - name: 'MiniMOTD'
+    kind: plugin
+    source: modrinth
+    url: 'https://modrinth.com/plugin/minimotd/'
+    file_filter: 'minimotd-velocity-*.jar'
+    post_processors: [plugin]
+
+  - name: 'Multiverse-Core'
+    kind: plugin
+    source: modrinth
+    url: 'https://modrinth.com/plugin/multiverse-core/'
+    file_filter: 'multiverse-core-*.jar'
+    post_processors: [plugin]
+
+  - name: 'NBTAPI'
+    kind: plugin
+    source: modrinth
+    url: 'https://modrinth.com/plugin/nbtapi/'
+    file_filter: 'item-nbt-api-plugin-*.jar'
+    post_processors: [plugin]
+
+  - name: 'PacketEvents'
+    kind: plugin
+    source: modrinth
+    url: 'https://modrinth.com/plugin/packetevents/'
+    file_filter: 'packetevents-spigot-*.jar'
+    post_processors: [plugin]
+
+  - name: 'Plan'
+    kind: plugin
+    source: github
+    url: 'https://github.com/plan-player-analytics/Plan'
+    file_filter: 'Plan-*.jar'
+    post_processors: [plugin]
+
+  - name: 'PlanFabric'
+    kind: mod
+    source: github
+    url: 'https://github.com/plan-player-analytics/Plan'
+    file_filter: 'PlanFabric-*.jar'
+    post_processors: [fabric_mod]
+
+  - name: 'PlotSquared'
+    kind: plugin
+    source: github
+    url: 'https://github.com/IntellectualSites/PlotSquared'
+    post_processors: [plugin]
+
+  - name: 'PlugManX'
+    kind: plugin
+    source: modrinth
+    url: 'https://modrinth.com/plugin/plugmanx/'
+    file_filter: 'PlugManX-*.jar'
+    post_processors: [plugin]
+
+  - name: 'Prism'
+    kind: plugin
+    source: modrinth
+    url: 'https://modrinth.com/plugin/prism/'
+    file_filter: 'prism-paper-*.jar'
+    post_processors: [plugin]
+
+  - name: 'Purpur'
+    kind: engine
+    source: direct
+    url: 'https://api.purpurmc.org/v2/purpur/26.2/latest/download'
+    post_processors: [version_json]
+
+  - name: 'RedCraftBungeeJsonApi'
+    kind: plugin
+    source: github
+    url: 'https://github.com/redcraft-org/RedCraftBungeeJsonApi'
+    file_filter: 'RedCraftBungeeJsonApi-*.jar'
+    post_processors: [plugin]
+
+  - name: 'RedCraftChat'
+    kind: plugin
+    source: github
+    url: 'https://github.com/redcraft-org/RedCraftChat'
+    file_filter: 'RedCraftChat-*.jar'
+    post_processors: [plugin]
+
+  - name: 'RedCraftReboot'
+    kind: plugin
+    source: github
+    url: 'https://github.com/redcraft-org/RedCraftReboot'
+    file_filter: 'RedCraftReboot-*.jar'
+    post_processors: [plugin]
+
+  - name: 'RedCraftRedstoneUtility'
+    kind: plugin
+    source: github
+    url: 'https://github.com/redcraft-org/RedCraftRedstoneUtility'
+    file_filter: 'RedCraftRedstoneUtility-*.jar'
+    post_processors: [plugin]
+
+  - name: 'SchematioConnector'
+    kind: plugin
+    source: github
+    url: 'https://github.com/Schem-at/SchematioConnector'
+    file_filter: 'SchematioConnector-Paper-*.jar'
+    post_processors: [plugin]
+
+  - name: 'SelectionVisualizer'
+    kind: plugin
+    source: spiget
+    url: 'https://www.spigotmc.org/resources/selection-visualizer.22631/'
+    post_processors: [plugin]
+
+  - name: 'ServerPermissions'
+    kind: plugin
+    source: modrinth
+    url: 'https://modrinth.com/plugin/serverpermissions/'
+    file_filter: 'ServerPermissions-*.jar'
+    post_processors: [plugin]
+
+  - name: 'spark'
+    kind: plugin
+    source: jenkins
+    url: 'https://ci.lucko.me/job/spark/'
+    file_filter: 'spark-*-bukkit.jar'
+    post_processors: [plugin]
+
+  - name: 'sparkfabric'
+    kind: mod
+    source: jenkins
+    url: 'https://ci.lucko.me/job/spark/'
+    file_filter: 'spark-*-fabric.jar'
+    post_processors: [fabric_mod]
+
+  - name: 'sparkvelocity'
+    kind: plugin
+    source: jenkins
+    url: 'https://ci.lucko.me/job/spark/'
+    file_filter: 'spark-*-velocity.jar'
+    post_processors: [plugin]
+
+  - name: 'VanillaPermissions'
+    kind: mod
+    source: modrinth
+    url: 'https://modrinth.com/mod/vanilla-permissions'
+    file_filter: 'vanilla-permissions-*.jar'
+    post_processors: [fabric_mod]
+
+  - name: 'Velocitab'
+    kind: plugin
+    source: modrinth
+    url: 'https://modrinth.com/plugin/velocitab/'
+    file_filter: 'Velocitab-*.jar'
+    post_processors: [plugin]
+
+  - name: 'Velocity'
+    kind: engine
+    source: papermc
+    url: 'https://fill.papermc.io/v3/projects/velocity/versions/4.1.0-SNAPSHOT'
+    file_filter: 'velocity-4.1.0-SNAPSHOT-*.jar'
+
+  - name: 'VeryManyPlayers'
+    kind: mod
+    source: modrinth
+    url: 'https://modrinth.com/mod/vmp-fabric'
+    file_filter: 'vmp-fabric-mc26.2-*.jar'
+    post_processors: [fabric_mod]
+
+  - name: 'ViaBackwards'
+    kind: plugin
+    source: modrinth
+    url: 'https://modrinth.com/plugin/viabackwards/'
+    file_filter: 'ViaBackwards-5.11.*.jar'
+    post_processors: [plugin]
+
+  - name: 'ViaFabric'
+    kind: mod
+    source: modrinth
+    url: 'https://modrinth.com/mod/viafabric/'
+    file_filter: 'ViaFabric-*-26.x.jar'
+    post_processors: [fabric_mod]
+
+  - name: 'ViaRewind'
+    kind: plugin
+    source: modrinth
+    url: 'https://modrinth.com/plugin/viarewind/'
+    file_filter: 'ViaRewind-4.1.*.jar'
+    post_processors: [plugin]
+
+  - name: 'ViaVersion'
+    kind: plugin
+    source: modrinth
+    url: 'https://modrinth.com/plugin/viaversion/'
+    file_filter: 'ViaVersion-5.11.*.jar'
+    post_processors: [plugin]
+
+  - name: 'VoidGen'
+    kind: plugin
+    source: spiget
+    url: 'https://www.spigotmc.org/resources/voidgen.25391/'
+    post_processors: [plugin]
+
+  - name: 'WorldGuard'
+    kind: plugin
+    source: modrinth
+    url: 'https://modrinth.com/plugin/worldguard/'
+    file_filter: 'worldguard-bukkit-*.jar'
+    post_processors: [plugin]

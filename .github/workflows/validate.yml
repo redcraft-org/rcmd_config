@@ -1,0 +1,20 @@
+name: Validate
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v5
+
+      - name: Build rcmd
+        run: |
+          git clone --depth 1 https://github.com/redcraft-org/RedCraftManagerDaemon.git /tmp/rcmd
+          cargo build --release --manifest-path /tmp/rcmd/Cargo.toml
+
+      - name: Check the configuration
+        run: /tmp/rcmd/target/release/rcmd validate .

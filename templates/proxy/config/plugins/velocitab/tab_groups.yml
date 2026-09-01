@@ -1,0 +1,54 @@
+groups:
+- name: default
+  headers:
+  - '&eW&celcome &f%username%'
+  - '&eWe&clcome &f%username%'
+  - '&eWel&ccome &f%username%'
+  - '&eWelc&come &f%username%'
+  - '&eWelco&cme &f%username%'
+  - '&eWelcom&ce &f%username%'
+  - '&eWelcome&c &f%username%'
+  - '&cW&eelcome &f%username%'
+  - '&cWe&elcome &f%username%'
+  - '&cWel&ecome &f%username%'
+  - '&cWelc&eome &f%username%'
+  - '&cWelco&eme &f%username%'
+  - '&cWelcom&ee &f%username%'
+  - '&cWelcome&e &f%username%'
+  footers:
+  - '&c&lRed&f&lCraft&7&l.org &r- Alpha'
+  format: '&7[&r%server%&7]&r %prefix%%username%%suffix%'
+  nametag:
+    prefix: '%prefix%'
+    suffix: '%suffix%'
+  servers:
+  - hub
+  - crea_build_plot
+  - crea_redstone_plot
+  - museum
+  - crea_engineer_test
+  - survival_vanilla
+  sorting_placeholders:
+  - '%server%'
+  - '%role_weight%'
+  - '%username_lower%'
+  placeholder_replacements:
+    '%server%':
+    - placeholder: hub
+      replacement: '&6Hub'
+    - placeholder: crea_build_plot
+      replacement: '&dBuild plot'
+    - placeholder: crea_redstone_plot
+      replacement: '&4Redstone plot'
+    - placeholder: museum
+      replacement: '&eMuseum'
+    - placeholder: crea_engineer_test
+      replacement: '&5Crea Engineer Test'
+    - placeholder: survival_vanilla
+      replacement: '&9Survival Vanilla'
+  collisions: false
+  header_footer_update_rate: 200
+  format_update_rate: 1000
+  nametag_update_rate: 1000
+  placeholder_update_rate: 1000
+  only_list_players_in_same_server: false

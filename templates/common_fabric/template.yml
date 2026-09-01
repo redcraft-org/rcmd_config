@@ -1,0 +1,10 @@
+buildable: false
+
+artifacts:
+  Fabric: '26.2'
+
+# The literal string sitting in the config files, mapped onto
+# the environment variable holding the real value on the
+# machine doing the build. No secret is ever in here.
+secrets:
+  MYSQL_PASSWORD: COMMON_MYSQL_PASSWORD

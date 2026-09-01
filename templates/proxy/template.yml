@@ -1,0 +1,23 @@
+artifacts:
+  Floodgate: '2.2.*'
+  Geyser: '2.11.*'
+  LiteBans: '2.19.*'
+  LuckPermsVelocity: '5.5.*'
+  Maintenance: '5.1.*'
+  MiniMOTD: '2.2.*'
+  Plan: '5.*'
+  RedCraftChat: '0.2.*'
+  ServerPermissions: '1.3.*'
+  sparkvelocity: '1.10.*'
+  Velocitab: '1.7.*'
+  Velocity: '4.*'
+
+# The literal string sitting in the config files, mapped onto
+# the environment variable holding the real value on the
+# machine doing the build. No secret is ever in here.
+secrets:
+  CLAUDE_TOKEN: CLAUDE_TOKEN
+  DEEPL_TOKEN: DEEPL_TOKEN
+  DISCORD_TOKEN: DISCORD_TOKEN
+  MYSQL_PASSWORD: COMMON_MYSQL_PASSWORD
+  VELOCITY_FORWARDING_SECRET: VELOCITY_FORWARDING_SECRET
