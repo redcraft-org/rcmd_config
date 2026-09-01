@@ -61,6 +61,14 @@ A config file carries a placeholder like `MYSQL_PASSWORD` where the password goe
 
 A pin that names something the catalog doesn't have will fail validation. That's deliberate: the tooling this replaced would happily build a template pinning a plugin nobody had ever downloaded, and you'd find out at restart time.
 
+## How rcmd writes to this repository
+
+rcmd reads this repository with no credential at all, because it's public. It only needs a token to write, and writing means exactly two things: pushing an `update/...` branch and opening the pull request for it.
+
+The token is a fine-grained one, scoped to this repository only, with Contents write to push the branch and Pull requests write to open it. That's all. It can't touch any other repository, it can't run workflows, and it can't change settings.
+
+:warning: rcmd never pushes to `main`. It hard resets its own checkout to whatever `main` says, so anything committed there by hand gets thrown away on the next restart. Changes come in through pull requests like everybody else's.
+
 ## How to change a version
 
 You usually don't have to. rcmd checks every night, and anything matching the existing pin is picked up on its own.
