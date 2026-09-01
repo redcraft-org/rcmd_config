@@ -65,7 +65,7 @@ A pin that names something the catalog doesn't have will fail validation. That's
 
 rcmd reads this repository with no credential at all, because it's public. It only needs a token to write, and writing means exactly two things: pushing an `update/...` branch and opening the pull request for it.
 
-The token is a fine-grained one, scoped to this repository only, with Contents write to push the branch and Pull requests write to open it. It goes in rcmd's environment as `RCMD_CONFIG_GITHUB_TOKEN`. That's all. It can't touch any other repository, it can't run workflows, and it can't change settings.
+The token is a fine-grained one, scoped to this repository only, with Contents write to push the branch and Pull requests write to open it. It goes in rcmd's environment as `RCMD_CONFIG_GITHUB_TOKEN`. That's all. It can't write to any other repository, it can't run workflows, and it can't change settings.
 
 :warning: rcmd never pushes to `main`. It hard resets its own checkout to whatever `main` says, so anything committed there by hand gets thrown away on the next restart. Changes come in through pull requests like everybody else's.
 
