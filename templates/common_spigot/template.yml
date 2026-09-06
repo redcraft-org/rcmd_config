@@ -18,6 +18,7 @@ artifacts:
   Prism: '4.*'
   Purpur: '26.2'
   RedCraftReboot: '0.0.*'
+  SchematioConnector: '1.3.*'
   SelectionVisualizer: '3.3.*'
   spark: '1.10.*'
   ViaBackwards: '5.11.*'

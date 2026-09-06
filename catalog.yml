@@ -406,6 +406,13 @@ artifacts:
     file_filter: 'SchematioConnector-Paper-*.jar'
     post_processors: [plugin]
 
+  - name: 'SchematioConnectorFabric'
+    kind: mod
+    source: github
+    url: 'https://github.com/Schem-at/SchematioConnector'
+    file_filter: 'SchematioConnector-Fabric-mc26.2-*.jar'
+    post_processors: [fabric_mod]
+
   # Paid, and behind a bot check, so rcmd does not try.
   # Upload it with curl -T <jar> .../api/v1/artifacts/SelectionVisualizer/versions
   - name: 'SelectionVisualizer'
