@@ -1,7 +1,7 @@
 inherits: common_fabric
 
 artifacts:
-  Fabric: '26.2'
+  Fabric: '26.3'
 
 # The literal string sitting in the config files, mapped onto
 # the environment variable holding the real value on the

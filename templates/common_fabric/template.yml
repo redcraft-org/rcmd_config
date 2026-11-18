@@ -1,8 +1,8 @@
 buildable: false
 
 artifacts:
-  Fabric: '26.2'
-  SchematioConnectorFabric: '1.3.*'
+  Fabric: '26.3'
+  SchematioConnectorFabric: '1.7.*'
 
 # The literal string sitting in the config files, mapped onto
 # the environment variable holding the real value on the

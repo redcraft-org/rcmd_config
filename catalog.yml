@@ -12,7 +12,7 @@ artifacts:
     kind: mod
     source: modrinth
     url: 'https://modrinth.com/mod/alternate-current/'
-    file_filter: 'alternate-current-mc26.2-*.jar'
+    file_filter: 'alternate-current-mc26.3-*.jar'
     post_processors: [fabric_mod]
 
   - name: 'AntiRedstoneClock'
@@ -54,7 +54,7 @@ artifacts:
     kind: mod
     source: modrinth
     url: 'https://modrinth.com/mod/carpet/'
-    file_filter: 'fabric-carpet-26.2+*.jar'
+    file_filter: 'fabric-carpet-26.3+*.jar'
     post_processors: [fabric_mod]
 
   - name: 'CarpetExtra'
@@ -75,7 +75,7 @@ artifacts:
     kind: mod
     source: modrinth
     url: 'https://modrinth.com/mod/chunk-debug'
-    file_filter: 'ChunkDebug-*+26.2.jar'
+    file_filter: 'ChunkDebug-*+26.3.jar'
     post_processors: [fabric_mod]
 
   - name: 'Chunky'
@@ -149,14 +149,14 @@ artifacts:
   - name: 'Fabric'
     kind: engine
     source: fabricmc
-    url: 'https://meta.fabricmc.net/v2/versions/loader/26.2'
+    url: 'https://meta.fabricmc.net/v2/versions/loader/26.3'
     post_processors: [fabric_installer]
 
   - name: 'fabricapi'
     kind: mod
     source: modrinth
     url: 'https://modrinth.com/mod/fabric-api/'
-    file_filter: 'fabric-api-*+26.2.jar'
+    file_filter: 'fabric-api-*+26.3.jar'
     post_processors: [fabric_mod]
 
   - name: 'fabrickotlin'
@@ -233,7 +233,7 @@ artifacts:
     kind: mod
     source: github
     url: 'https://github.com/PotatoPresident/InvView'
-    file_filter: 'InvView-*-26.2+.jar'
+    file_filter: 'InvView-*-26.3+.jar'
     post_processors: [fabric_mod]
 
   - name: 'krypton'
@@ -269,7 +269,7 @@ artifacts:
     kind: mod
     source: github
     url: 'https://github.com/CaffeineMC/lithium-fabric'
-    file_filter: 'lithium-fabric-*+mc26.2.jar'
+    file_filter: 'lithium-fabric-*+mc26.3.jar'
     post_processors: [fabric_mod]
 
   - name: 'LuckPerms'
@@ -410,7 +410,7 @@ artifacts:
     kind: mod
     source: github
     url: 'https://github.com/Schem-at/SchematioConnector'
-    file_filter: 'SchematioConnector-Fabric-mc26.2-*.jar'
+    file_filter: 'SchematioConnector-Fabric-mc26.3-*.jar'
     post_processors: [fabric_mod]
 
   # Paid, and behind a bot check, so rcmd does not try.
@@ -474,14 +474,14 @@ artifacts:
     kind: mod
     source: modrinth
     url: 'https://modrinth.com/mod/vmp-fabric'
-    file_filter: 'vmp-fabric-mc26.2-*.jar'
+    file_filter: 'vmp-fabric-mc26.3-*.jar'
     post_processors: [fabric_mod]
 
   - name: 'ViaBackwards'
     kind: plugin
     source: modrinth
     url: 'https://modrinth.com/plugin/viabackwards/'
-    file_filter: 'ViaBackwards-5.11.*.jar'
+    file_filter: 'ViaBackwards-5.12.*.jar'
     post_processors: [plugin]
 
   - name: 'ViaFabric'
@@ -495,7 +495,7 @@ artifacts:
     kind: plugin
     source: modrinth
     url: 'https://modrinth.com/plugin/viarewind/'
-    file_filter: 'ViaRewind-4.1.*.jar'
+    file_filter: 'ViaRewind-4.2.*.jar'
     post_processors: [plugin]
 
   - name: 'ViaVersion'
