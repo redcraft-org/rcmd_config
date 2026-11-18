@@ -466,8 +466,8 @@ artifacts:
   - name: 'Velocity'
     kind: engine
     source: papermc
-    url: 'https://fill.papermc.io/v3/projects/velocity/versions/4.1.0-SNAPSHOT'
-    file_filter: 'velocity-4.1.0-SNAPSHOT-*.jar'
+    url: 'https://fill.papermc.io/v3/projects/velocity/versions/4.3.1'
+    file_filter: 'velocity-4.3.1-*.jar'
     post_processors: [from_source]
 
   - name: 'VeryManyPlayers'
@@ -502,7 +502,7 @@ artifacts:
     kind: plugin
     source: modrinth
     url: 'https://modrinth.com/plugin/viaversion/'
-    file_filter: 'ViaVersion-5.11.*.jar'
+    file_filter: 'ViaVersion-5.12.*.jar'
     post_processors: [plugin]
 
   - name: 'VoidGen'

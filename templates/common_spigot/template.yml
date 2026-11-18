@@ -21,11 +21,11 @@ artifacts:
   SchematioConnector: '1.3.*'
   SelectionVisualizer: '3.3.*'
   spark: '1.10.*'
-  ViaBackwards: '5.11.*'
-  ViaRewind: '4.1.*'
-  ViaVersion: '5.11.*'
+  ViaBackwards: '5.12.*'
+  ViaRewind: '4.2.*'
+  ViaVersion: '5.12.*'
   VoidGen: '2.2.*'
-  WorldGuard: '7.0.*'
+  WorldGuard: '7.0.19*'
 
 # The literal string sitting in the config files, mapped onto
 # the environment variable holding the real value on the
